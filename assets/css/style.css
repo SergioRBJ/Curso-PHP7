@@ -1,128 +1,129 @@
 * {
-    font-family:  'Oswald', sans-serif;
-    box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    height: 100vh;
-    margin: 0px;
-    display: grid;
-    grid-template-rows: 120px 1fr 60px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header" "main" "footer";
+  height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 120px 1fr 60px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
 }
 
 .header {
-    grid-area: header;
-    background-color: #1867c0;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 10px;
-    z-index: 1;
-    box-shadow: 0px -2px 9px 1px rgba(85, 85, 85, 0.75);
+  grid-area: header;
+  background-color: #1867c0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  z-index: 1;
+  box-shadow: 0px -2px 9px 1px rgba(85, 85, 85, 0.75);
 }
 
 .main {
-    grid-area: main;
-    height: calc(100vh - 180px);
-    background-color: #f0f0f0;
-    padding: 20px;
+  grid-area: main;
+  height: calc(100vh - 180px);
+  background-color: #f0f0f0;
+  padding: 20px;
 }
 
 .content {
-    position: relative;
-    height: 100%;
-    overflow-y: scroll;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .footer {
-    grid-area: footer;
-    background-color: rgb(230, 230, 230);
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 20px;
-    color: rgb(124, 122, 122);
-    box-shadow: 0px -1px 9px 1px rgba(85, 85, 85, 0.75);
-    /*position: sticky;
-    bottom: 0px;*/ 
+  grid-area: footer;
+  background-color: rgb(230, 230, 230);
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+  color: rgb(124, 122, 122);
+  box-shadow: 0px -1px 9px 1px rgba(85, 85, 85, 0.75);
+  /*position: sticky;
+    bottom: 0px;*/
 }
 
 .header > h1 {
-    margin: 0px;
-    font-weight: 400;
-    font-size: 2.3rem;
+  margin: 0px;
+  font-weight: 400;
+  font-size: 2.3rem;
 }
 
 .header > h2 {
-    margin: 0px;
-    font-weight: 300;
+  margin: 0px;
+  font-weight: 300;
 }
 
 .modulos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .modulo {
-    flex-basis: 32%;
-    border: 2px solid #4a92e6;
-    margin-bottom: 15px;
-    border-radius:  0 0 4px 4px;
+  flex-basis: 32%;
+  border: 2px solid #4a92e6;
+  margin-bottom: 15px;
+  border-radius: 0 0 4px 4px;
 }
 
 .modulo > h3 {
-    margin: 0px;
-    color: #fff;
-    font-weight: 300;
-    font-size: 1.5rem;
-    padding: 10px 20px;
-    background-color: #4a92e6;
+  margin: 0px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: #4a92e6;
 }
 
 .modulo > ul {
-    margin: 0px;
-    padding: 10px;
-    list-style: none;
+  margin: 0px;
+  padding: 10px;
+  list-style: none;
 }
 
 .modulo > ul > li {
-    padding: 6px;
-    font-size: 1.2rem;
-    cursor: pointer;
+  padding: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .modulo > ul > li > a {
-    display: flex;
-    text-decoration: none;
-    color: #222;
+  display: flex;
+  text-decoration: none;
+  color: #222;
 }
 
 .modulo > ul > li:hover {
-    display: flex;
-    text-decoration: none;
-    color: rgb(66, 65, 65);
-    transform: translateY(-3px);
-    transition: all 0.2s;
+  display: flex;
+  text-decoration: none;
+  color: rgb(66, 65, 65);
+  transform: translateY(-3px);
+  transition: all 0.2s;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    width: 7px;
-}
-  
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    border-radius: 10px;
-    background: rgba(204, 204, 204, 0.8);
-    box-shadow: inset 0px 0 3px rgba(131, 130, 130, 0.5); 
+  width: 10px;
+  width: 7px;
 }
 
-.modulo.cor {  }
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(204, 204, 204, 0.8);
+  box-shadow: inset 0px 0 3px rgba(131, 130, 130, 0.5);
+}
+
+.modulo.cor {
+}
